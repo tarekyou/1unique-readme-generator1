@@ -21,8 +21,9 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if(!license){
     return '';
+  } else{
+  return`* [License](#license)`
   }
-  return``
 }
 
 // TODO: Create a function to generate markdown for README
@@ -31,16 +32,17 @@ function generateMarkdown(data) {
   ![GitHub](https://img.shields.io/github/license/${data.github}/${data.title})
   # ${data.title}
   ## Description
-  ${data.about}
+  ${data.description}
   ## Table of Contents
-  
-  * [Usage](#usage)
-  * [License](#license)
+  * [Installation](#installation)
+  * [Usage](#usage)    
+  ${renderLicenseSection(data.license)}  
   * [Contribution](#contribution)
   * [Test](#test)
   * [Questions](#questions)
   
-  
+  ## Installation
+  ${data.installInstructions}
   ## Usage
   ${data.usage}
   ## License

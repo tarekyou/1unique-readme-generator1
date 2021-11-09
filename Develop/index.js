@@ -8,7 +8,7 @@ const questions =  (data) => {
         {
             type: 'input',
             name: 'title',
-            message: 'What is the name of your project? required',
+            message: 'What is the name of your project?',
             validate: titleRes => {
                 if (titleRes) {
                     return true;
@@ -21,7 +21,7 @@ const questions =  (data) => {
         {
             type: 'input',
             name: 'description',
-            message: 'what is the description for your project? required',
+            message: 'what is the description for your project?',
             validate: descriptionRes => {
                 if (descriptionRes) {
                     return true;
@@ -120,7 +120,7 @@ const questions =  (data) => {
         {
             type: 'input',
             name: 'email',
-            message: 'What is your email address? required',
+            message: 'What is your email address?',
             validate: emailRes => {
                 if (emailRes) {
                     return true;
