@@ -1,3 +1,14 @@
-# Professional README Generator Starter Code
+# Readme generator
 
-[How to create a Professional README](./readme-guide.md)
+## Purpose
+A professional README.md generator for projects 
+
+## Built With
+* JavaScript
+* Node.js
+
+## Website
+https://tarekyou.github.io/readme-generator/
+
+## Contribution
+Made with ❤️ by Tarek
