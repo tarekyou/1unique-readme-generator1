@@ -61,7 +61,8 @@ function generateMarkdown(data) {
   ## Test
   ${data.test}
   ## Questions
-  Created by: [${data.github}](${data.link})
+  Created by:   <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/${
+    data.github}">GitHub</a>
   
   Contact email: [${data.email}](${data.email})
 `;

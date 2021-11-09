@@ -104,19 +104,19 @@ const questions =  (data) => {
                 }
             }
         },
-        {
-            type: 'input',
-            name: 'link',
-            message: 'Please enter your github link:',
-            validate: linkRes => {
-                if (linkRes) {
-                    return true;
-                } else {
-                    console.log('Please enter your github link');
-                    return false;
-                }
-            }
-        },
+        // {
+        //     type: 'input',
+        //     name: 'link',
+        //     message: 'Please enter your project link:',
+        //     validate: linkRes => {
+        //         if (linkRes) {
+        //             return true;
+        //         } else {
+        //             console.log('Please enter your github link');
+        //             return false;
+        //         }
+        //     }
+        // },
         {
             type: 'input',
             name: 'email',
