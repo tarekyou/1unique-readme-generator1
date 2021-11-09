@@ -3,7 +3,7 @@ const inquirer = require ('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 const fs = require('fs');
 // TODO: Create an array of questions for user input
-const questions =  () => {
+const questions =  (data) => {
     return inquirer.prompt([
         {
             type: 'input',
@@ -64,7 +64,7 @@ const questions =  () => {
         {
             type: 'list',
             name: 'license',
-            choices: ['MIT', 'GNU', 'Apache', 'BSD', 'ISC']
+            choices: ['MIT', 'GPL 3.0', 'Apache 2.0', 'BSD 3', 'None']
         },
 
         {
@@ -120,7 +120,7 @@ const questions =  () => {
         {
             type: 'input',
             name: 'email',
-            message: 'What is your email address?',
+            message: 'What is your email address? required',
             validate: emailRes => {
                 if (emailRes) {
                     return true;
@@ -151,7 +151,10 @@ const writeFile = fileContent =>{
         })
     });
 };
-
+questions()
+.then(generateMarkdown)
+.then(fileContent=>{return writeFile(fileContent)})
+.catch(err=> {console.log(err)})
 // TODO: Create a function to initialize app
 function init() {
     // questions();
