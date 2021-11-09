@@ -4,13 +4,21 @@ function renderLicenseBadge(license) {
   if(!license){
     return '';
   } else if (license === 'MIT'){
-    return `![GitHub](https://img.shields.io/badge/license-MIT-brightgreen)`
+    return `![GitHub]<a href="https://opensource.org/licenses/MIT">
+     <img src="https://img.shields.io/badge/license-MIT-brightgreen"/> 
+     </a> `
   } else if (license === 'GPL 3.0'){
-    return `![GitHub](https://img.shields.io/badge/license-GPL%203.0-brightgreen)`
+    return `![GitHub]<a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+    <img src="https://img.shields.io/badge/license-GPL%203.0-brightgreen"/>
+    </a>`
   } else if (license === 'Apache 2.0'){
-    return `![GitHub](https://img.shields.io/badge/license-Apache%202.0-brightgreen)`
+    return `![GitHub]<a href="https://www.apache.org/licenses/LICENSE-2.0">
+    <img src="https://img.shields.io/badge/license-Apache%202.0-brightgreen"/>
+    </a>`
   } else if (license === 'BSD 3'){
-    return `![GitHub](https://img.shields.io/badge/license-BSD%203-brightgreen)`
+    return `![GitHub]<a href="https://opensource.org/licenses/BSD-3-Clause">
+    <img src="https://img.shields.io/badge/license-BSD%203-brightgreen"/>
+    </a>`
   } else{
     return `![GitHub]`
   }
@@ -21,8 +29,7 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if(!license){
     return '';
-  }
-  return``
+  } 
 }
 
 // TODO: Create a function that returns the license section of README
@@ -55,13 +62,13 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
   ## License
-  ${data.license} 
+  ${renderLicenseBadge(data.license)} 
   ## Contribution
   ${data.contribution}
   ## Test
   ${data.test}
   ## Questions
-  Created by:   <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/${
+  Created by: [${data.github}]  <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/${
     data.github}">GitHub</a>
   
   Contact email: [${data.email}](${data.email})
