@@ -1,5 +1,5 @@
 
-  ![GitHub](https://img.shields.io/github/license/a/a)
+  ![GitHub]
   # a
   ## Description
   a
@@ -16,7 +16,7 @@
   ## Usage
   a
   ## License
-  MIT 
+  None 
   ## Contribution
   a
   ## Test

@@ -3,8 +3,17 @@
 function renderLicenseBadge(license) {
   if(!license){
     return '';
+  } else if (license === 'MIT'){
+    return `![GitHub](https://img.shields.io/badge/license-MIT-brightgreen)`
+  } else if (license === 'GPL 3.0'){
+    return `![GitHub](https://img.shields.io/badge/license-GPL%203.0-brightgreen)`
+  } else if (license === 'Apache 2.0'){
+    return `![GitHub](https://img.shields.io/badge/license-Apache%202.0-brightgreen)`
+  } else if (license === 'BSD 3'){
+    return `![GitHub](https://img.shields.io/badge/license-BSD%203-brightgreen)`
+  } else{
+    return `![GitHub]`
   }
-  return``
 }
 
 // TODO: Create a function that returns the license link
@@ -29,7 +38,7 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  ![GitHub](https://img.shields.io/github/license/${data.github}/${data.title})
+  ${renderLicenseBadge(data.license)}
   # ${data.title}
   ## Description
   ${data.description}
