@@ -1,10 +1,10 @@
 
-# asd  
-None  
+# flight-planner  
+  
 
 ## Description  
 
-asd
+an app to find cheap tickets
 
 ## Table of Contents
 
@@ -16,17 +16,17 @@ asd
 * [Questions](#questions)
   
 ## Installation
-asd
-## Usage
-asd
-## License
 None
+## Usage
+to find cheap tickets and currency exchange rates as applicable
+## License
+
 
 ## Contribution
-asd
+None
 ## Test
-asd
+None
 ## Questions
-Created by: [asd]  <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/asd">GitHub</a>
+Created by: [tarekyou]  <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/tarekyou">GitHub</a>
   
-Contact email: [asd](asd)
+Contact email: [sample@sample.com](sample@sample.com)
