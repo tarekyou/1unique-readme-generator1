@@ -1,12 +1,10 @@
 
 # asd  
-<a href="https://opensource.org/licenses/BSD-3-Clause">
-    <img src="https://img.shields.io/badge/license-BSD%203-brightgreen"/>
-    </a>  
+None  
 
 ## Description  
 
-ff
+asd
 
 ## Table of Contents
 
@@ -22,10 +20,8 @@ asd
 ## Usage
 asd
 ## License
-<a href="https://opensource.org/licenses/BSD-3-Clause">
-    <img src="https://img.shields.io/badge/license-BSD%203-brightgreen"/>
-    </a>
-   
+None
+
 ## Contribution
 asd
 ## Test

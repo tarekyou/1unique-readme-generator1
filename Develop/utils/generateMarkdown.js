@@ -20,7 +20,7 @@ function renderLicenseBadge(license) {
     <img src="https://img.shields.io/badge/license-BSD%203-brightgreen"/>
     </a>`
   } else{
-    return ``
+    return `None`
   }
 }
 
