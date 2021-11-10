@@ -31,18 +31,18 @@ const questions =  (data) => {
                 }
             }
         },
-        {
-            type: 'confirm',
-            name: 'installConfirm',
-            message: 'Are there instructions for installation?',
-            default: false
-        },
+        // {
+        //     type: 'confirm',
+        //     name: 'installConfirm',
+        //     message: 'Are there instructions for installation?',
+        //     default: false
+        // },
         {
             type: 'input',
             name: 'installInstructions',
             message: 'What are the instructions for installation?',
-            when: ({ installConfirm }) => {
-                if (installConfirm) {
+            vaildate:  installInstructionsRes => {
+                if (installInstructionsRes) {
                     return true;
                 } else {
                     return false;
@@ -151,13 +151,16 @@ const writeFile = fileContent =>{
         })
     });
 };
-questions()
+// questions()
+// .then(generateMarkdown)
+// .then(fileContent=>{return writeFile(fileContent)})
+// .catch(err=> {console.log(err)})
+// TODO: Create a function to initialize app
+function init() {
+    questions()
 .then(generateMarkdown)
 .then(fileContent=>{return writeFile(fileContent)})
 .catch(err=> {console.log(err)})
-// TODO: Create a function to initialize app
-function init() {
-    // questions();
 }
 
 // Function call to initialize app

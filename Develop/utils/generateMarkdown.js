@@ -42,6 +42,12 @@ function renderLicenseSection(license) {
   }
 }
 
+// function instructions(installInstructions){
+//   if(!installInstructions){
+//     return ''
+//   } 
+// }
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
