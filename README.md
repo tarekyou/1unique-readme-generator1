@@ -8,7 +8,7 @@ A professional README.md generator for projects
 * Node.js
 
 ## Website
-https://tarekyou.github.io/readme-generator/
+N/A
 
 ## Contribution
 Made with ❤️ by Tarek
