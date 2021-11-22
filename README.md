@@ -7,8 +7,8 @@ A professional README.md generator for projects
 * JavaScript
 * Node.js
 
-## Website
-N/A
+## Walk-through video
+https://watch.screencastify.com/v/a9JfeLefoAMic78GW2HA
 
 ## Contribution
 Made with ❤️ by Tarek
