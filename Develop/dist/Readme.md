@@ -1,10 +1,12 @@
 
 # flight-planner  
-  
+ <a href="https://opensource.org/licenses/MIT">
+     <img src="https://img.shields.io/badge/license-MIT-brightgreen"/> 
+     </a>   
 
 ## Description  
 
-an app to find cheap tickets
+an appl to find cheap flights
 
 ## Table of Contents
 
@@ -16,17 +18,19 @@ an app to find cheap tickets
 * [Questions](#questions)
   
 ## Installation
-None
+node index
 ## Usage
-to find cheap tickets and currency exchange rates as applicable
+an app to find cheap flight tickets and currency exchange rates
 ## License
-
+ <a href="https://opensource.org/licenses/MIT">
+     <img src="https://img.shields.io/badge/license-MIT-brightgreen"/> 
+     </a> 
 
 ## Contribution
-None
+none
 ## Test
-None
+none
 ## Questions
 Created by: [tarekyou]  <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/tarekyou">GitHub</a>
   
-Contact email: [sample@sample.com](sample@sample.com)
+Contact email: [test@email.com](test@email.com)
